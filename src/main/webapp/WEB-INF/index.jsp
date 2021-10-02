@@ -17,15 +17,15 @@
 <body>
 	<div>
 		<h1>Fruit Store</h1>
-		<table>
+		<table class="table">
 			<tbody>
 				<tr>
-					<th>Name</th>
-					<th>Price</th>
+					<th scope="col">Name</th>
+					<th scope="col">Price</th>
 				</tr>
 				<c:forEach var="oneFruit" items="${fruitsFromMyController}">
 					<tr>
-	        			<td><c:out value="${oneFruit.name}"></c:out></td>
+	        			<td scope="row"><c:out value="${oneFruit.name}"></c:out></td>
 	        			<td><c:out value="${oneFruit.price}"></c:out></td>
 	        		</tr>
     			</c:forEach>
